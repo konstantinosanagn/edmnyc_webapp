@@ -1,0 +1,83 @@
+<!-- Author: Konstantinos Anagnostopoulos -->
+{% extends "layout.html" %}
+
+{% block title %}Edit Event{% endblock %}
+
+{% block content %}
+<div class="container mt-4 share-tech-mono">
+  <h1 class="mb-4">Edit Event</h1>
+
+  <!-- Error message placeholder -->
+  <div id="error-message" class="alert alert-danger d-none" role="alert" aria-live="assertive"></div>
+
+  <!-- Event Edit Form -->
+  <form id="edit-event-form" novalidate>
+    <!-- Title -->
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" value="{{ event.title }}" required>
+      <div class="invalid-feedback" id="error-title">Please provide a valid title.</div>
+    </div>
+
+    <!-- Media URL -->
+    <div class="mb-3">
+      <label for="media" class="form-label">Media URL</label>
+      <input type="url" class="form-control" id="media" value="{{ event.media }}" required>
+      <div class="invalid-feedback" id="error-media">Please provide a valid URL.</div>
+    </div>
+
+    <!-- Description -->
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description" rows="3" required>{{ event.description }}</textarea>
+      <div class="invalid-feedback" id="error-description">Please provide a description.</div>
+    </div>
+
+    <!-- Start Date & Time -->
+    <div class="mb-3">
+      <label for="startDate" class="form-label">Start Date & Time</label>
+      <input type="datetime-local" class="form-control" id="startDate" value="{{ event.startDate }}" required>
+      <div class="invalid-feedback" id="error-startDate">Please provide a valid date and time.</div>
+    </div>
+
+    <!-- Venue -->
+    <div class="mb-3">
+      <label for="venue" class="form-label">Venue</label>
+      <input type="text" class="form-control" id="venue" value="{{ event.venue }}" required>
+      <div class="invalid-feedback" id="error-venue">Please provide a venue.</div>
+    </div>
+
+    <!-- Address -->
+    <div class="mb-3">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" value="{{ event.address }}" required>
+      <div class="invalid-feedback" id="error-address">Please provide an address.</div>
+    </div>
+
+    <!-- Price Field -->
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" class="form-control" id="price" value="{{ event.price }}" required>
+        <div class="invalid-feedback" id="error-price">Please provide a valid price (e.g., $61.96).</div>
+    </div>
+
+    <!-- Artists -->
+    <div class="mb-3">
+      <label for="artists" class="form-label">Artists (comma separated)</label>
+      <input type="text" class="form-control" id="artists" value="{{ event.artists | join(', ') }}" required>
+      <div class="invalid-feedback" id="error-artists">Please provide at least one artist.</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mb-3">
+      <button type="submit" class="btn view-events-btn">Submit</button>
+      <button type="button" id="discard-btn" class="btn clear-btn ms-2">Discard Changes</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ url_for('static', filename='js/edit.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "1",
+    "title": "CITYFOX",
+    "media": "https://images.squarespace-cdn.com/content/v1/63a1f6588d7df2123602aabb/a66bf564-cfe2-47bb-aed9-70af540a22e5/050325_Ctyfox+Regenerate_Lineup_Square.png?format=1000w",
+    "description": "CITYFOX is an immersive electronic music event set to electrify the atmosphere at The Brooklyn Mirage. The experience promises cutting-edge audio and visual production, ensuring that every attendee is fully immersed in the dynamic energy of the night. Scheduled for Saturday, May 3, 2025 at 10:00 PM until Sunday, May 4, 2025 at 4:00 AM, this event is tailored for a mature audience seeking a premium concert experience. With a unique industrial venue that transforms into a surreal dance floor, CITYFOX offers a one-of-a-kind opportunity to witness a curated lineup of top electronic artists in an unforgettable setting.",
+    "startDate": "2025-05-03T22:00:00",
+    "venue": "The Brooklyn Mirage at Avant Gardner",
+    "address": "140 Stewart Ave, Brooklyn, NY 11237, USA",
+    "price": "$61.96",
+    "artists": [
+      "Andhim",
+      "Argy",
+      "Carlita",
+      "Colyn",
+      "Sainte Vie",
+      "Recondite",
+      "Shimza",
+      "Tom & Collins",
+      "AQUTIE",
+      "Chambord",
+      "Double Touch",
+      "Karaba"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Dimitri Vegas Live at Marquee New York",
+    "media": "https://dice-media.imgix.net/attachments/2024-12-18/8c2f2dde-15d5-4357-86bc-4ed30b8b5df1.jpg?rect=0%2C0%2C1080%2C1080&auto=format%2Ccompress&q=40&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=2",
+    "description": "Experience an electrifying night with world-renowned DJ Dimitri Vegas at Marquee New York. Known for his high-energy performances and chart-topping tracks, Dimitri Vegas promises an unforgettable evening of electronic dance music. The event is scheduled for Friday, March 7, 2025, starting at 11:00 PM. Please note, attendees must be 21 or older to enter.",
+    "startDate": "2025-03-07T23:00:00",
+    "venue": "Marquee",
+    "address": "289 10th Ave New York, NY 10001, USA",
+    "price": "$67.98",
+    "artists": [
+      "Dimitri Vegas"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "RUSH: Nico Moreno, ØTTA, Meilgaarden, Morenxxx",
+    "media": "https://images.squarespace-cdn.com/content/v1/63a1f6588d7df2123602aabb/a66bf564-cfe2-47bb-aed9-70af540a22e5/050325_Ctyfox+Regenerate_Lineup_Square.png?format=1000w",
+    "description": "For its first edition of 2025, RUSH invites Parisian trailblazers Nico Moreno and ØTTA alongside NY veterans Volvox and MORENXXX. On his Insolent Rave imprint, Moreno has staked his claim with a seismic sound that seizes the dancefloor with unstoppable force. ØTTA, co-founder of the Warg club night, brings a fierce and unapologetic energy to her sets. Meilgaarden and MORENXXX, both known for their dynamic performances, will ensure the night is filled with relentless beats and immersive rhythms.",
+    "startDate": "2025-03-08T00:00:00",
+    "venue": "Knockdown Center",
+    "address": "52-19 Flushing Ave, Maspeth, NY 11378, USA",
+    "price": "$48.93",
+    "artists": [
+      "Nico Moreno",
+      "ØTTA",
+      "Meilgaarden",
+      "Morenxxx"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "WhoMadeWho (Hybrid DJ Set)",
+    "media": "https://dice-media.imgix.net/attachments/2025-01-15/e5681b56-13c2-4970-a7a7-3736fa1b2165.jpg?rect=0%2C270%2C1081%2C1081&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Danish experimental trio WhoMadeWho, known for blending deep techno, '90s electronica, and '80s post-disco influences, will perform a special hybrid DJ set at the Knockdown Center. This event marks their debut at this venue and promises an electrifying night of innovative music.",
+    "startDate": "2025-03-14T00:00:00",
+    "venue": "Knockdown Center",
+    "address": "52-19 Flushing Ave, Maspeth, NY 11378, USA",
+    "price": "$38.63",
+    "artists": [
+      "WhoMadeWho"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Hernan Cattaneo Warehouse Event",
+    "media": "https://dice-media.imgix.net/attachments/2025-02-28/6388611b-26c6-449d-be90-14868ea2ab95.jpg?rect=0%2C0%2C1080%2C1080&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Experience an unforgettable night with renowned Argentinian DJ Hernan Cattaneo, known for his deep progressive house sets. Supporting acts include Mike Isai and CBJ THE DREAM. Presented by Avant Gardner, Real Talent Management, and The Ornate Project.",
+    "startDate": "2025-03-21T00:00:00",
+    "venue":"Park Slope Brooklyn Warehouse",
+    "address": "153 26th Street, Brooklyn, New York 11232, USA",
+    "price": "$60.93",
+    "artists": [
+      "Hernan Cattaneo",
+      "Mike Isai",
+      "CBJ THE DREAM"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Benny Benassi Live at Marquee New York",
+    "media": "https://dice-media.imgix.net/attachments/2025-01-13/6ee53195-1571-42de-97a4-56d4e1efc8bb.jpg?rect=0%2C0%2C1080%2C1080&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Join legendary DJ and producer Benny Benassi for an electrifying night of electronic dance music at Marquee New York. Known for his chart-topping hits and energetic performances, Benassi will take the stage on Saturday, March 22, 2025, at 11:00 PM. Attendees must be 21 or older to enter.",
+    "startDate": "2025-03-22T23:00:00",
+    "venue": "Marquee",
+    "address": "289 10th Ave New York, NY 10001, USA",
+    "price": "$39.66",
+    "artists": [
+      "Benny Benassi"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "OGUZ Live at The Brooklyn Monarch",
+    "media": "https://dice-media.imgix.net/attachments/2025-02-11/f4fe3d9b-6931-4bca-9650-85edc9251471.jpg?rect=0%2C0%2C1080%2C1080&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Experience an electrifying night of techno as Dutch producer OGUZ takes the stage at The Brooklyn Monarch. Known for his dynamic and immersive sets, OGUZ brings a fresh perspective to the techno scene. Supporting act JSMN will also perform, ensuring a night filled with pulsating beats and unforgettable rhythms.",
+    "startDate": "2025-03-28T00:00:00",
+    "venue": "The Brooklyn Monarch",
+    "address": "23 Meadow St, Brooklyn, NY 11206, USA",
+    "price": "$36.05",
+    "artists": [
+      "OGUZ",
+      "JSMN"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "T / L T: Armin van Buuren",
+    "media": "https://dice-media.imgix.net/attachments/2025-02-19/5e462a7e-2395-426c-91fd-b7bcb5f6de01.jpg?rect=0%2C1%2C1080%2C1080&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Experience an electrifying night with world-renowned DJ Armin van Buuren at the Brooklyn Storehouse. Known for his trance and progressive house tracks, Armin will deliver an unforgettable performance. This is a 21+ event.",
+    "startDate": "2025-04-19T00:00:00",
+    "venue":"Brooklyn Storehouse",
+    "address": "Building 293, Brooklyn Navy Yard, Assembly Rd, Brooklyn, NY 11205, USA",
+    "price": "$89.51",
+    "artists": [
+      "Armin van Buuren"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Sara Landry Presents ETERNALISM",
+    "media": "https://dice-media.imgix.net/attachments/2024-12-20/98d43840-8333-4f93-bee9-6003f0dbc890.jpg?rect=0%2C0%2C1080%2C1080&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Join techno DJ and producer Sara Landry for her debut of 'ETERNALISM' at The Brooklyn Mirage. Known for her dark, driving, and divinely feminine brand of hard techno, Sara Landry is a self-taught producer and audio engineer who has quickly emerged as one of the most exciting artists in the hard techno scene. This 21+ event is set to deliver an immersive and unforgettable experience.",
+    "startDate": "2025-05-01T00:00:00",
+    "venue": "The Brooklyn Mirage at Avant Gardner",
+    "address": "140 Stewart Ave, Brooklyn, NY 11237, USA",
+    "price": "$88.28",
+    "artists": [
+      "Sara Landry"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Peggy Gou Live at The Brooklyn Mirage",
+    "media": "https://dice-media.imgix.net/attachments/2025-02-10/080f3821-b470-42d4-aac6-517604d97cf5.jpg?rect=0%2C0%2C1080%2C1080&auto=format%2Ccompress&q=80&w=328&h=328&fit=crop&crop=faces%2Ccenter&dpr=1",
+    "description": "Globally renowned dance and fashion phenom Peggy Gou brings her infectious blend of house and techno to The Brooklyn Mirage for her first Avant Gardner play. This 21+ event promises an unforgettable night of music and dance.",
+    "startDate": "2025-05-18T18:00:00",
+    "venue": "The Brooklyn Mirage at Avant Gardner",
+    "address": "140 Stewart Ave, Brooklyn, NY 11237, USA",
+    "price": "$114.85",
+    "artists": [
+      "Peggy Gou"
+    ]
+  }
+  
+]

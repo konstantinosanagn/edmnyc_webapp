@@ -1,0 +1,88 @@
+<!-- Author: Konstantinos Anagnostopoulos -->
+{% extends "layout.html" %}
+
+{% block title %}Promote Event{% endblock %}
+
+{% block content %}
+<div class="container mt-4 share-tech-mono">
+  <h1 class="mb-4">Promote Event</h1>
+  
+  <!-- Success message placeholder -->
+  <div id="success-message" class="alert alert-success d-none" role="alert" aria-live="polite">
+    New item successfully created. <a id="view-new-item" href="#" class="alert-link">See it here</a>
+  </div>
+  
+  <!-- Error message placeholder -->
+  <div id="error-message" class="alert alert-danger d-none" role="alert" aria-live="assertive"></div>
+  
+  <!-- Event Form -->
+  <form id="add-event-form" novalidate>
+    <!-- Title -->
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name="title" placeholder="Enter event title" required>
+      <div class="invalid-feedback" id="error-title">Please provide a valid title.</div>
+    </div>
+    
+    <!-- Media URL -->
+    <div class="mb-3">
+      <label for="media" class="form-label">Media URL</label>
+      <input type="url" class="form-control" id="media" name="media" placeholder="Enter media URL" required>
+      <div class="invalid-feedback" id="error-media">Please provide a valid URL.</div>
+    </div>
+    
+    <!-- Description -->
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description" name="description" rows="3" placeholder="Enter description" required></textarea>
+      <div class="invalid-feedback" id="error-description">Please provide a description.</div>
+    </div>
+    
+    <!-- Start Date & Time -->
+    <div class="mb-3">
+      <label for="startDate" class="form-label">Start Date & Time</label>
+      <input type="datetime-local" class="form-control" id="startDate" name="startDate" required>
+      <div class="invalid-feedback" id="error-startDate">Please provide a valid date and time.</div>
+    </div>
+    
+    <!-- Venue -->
+    <div class="mb-3">
+      <label for="venue" class="form-label">Venue</label>
+      <input type="text" class="form-control" id="venue" name="venue" placeholder="Enter venue" required>
+      <div class="invalid-feedback" id="error-venue">Please provide a venue.</div>
+    </div>
+    
+    <!-- Address -->
+    <div class="mb-3">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" name="address" placeholder="Enter address" required>
+      <div class="invalid-feedback" id="error-address">Please provide an address.</div>
+    </div>
+    
+    <!-- Price -->
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input type="number" class="form-control" id="price" name="price" placeholder="Enter price (numbers only)" required>
+      <div class="invalid-feedback" id="error-price">Please provide a valid price.</div>
+    </div>
+    
+    <!-- Artists -->
+    <div class="mb-3">
+      <label for="artists" class="form-label">Artists (comma separated)</label>
+      <input type="text" class="form-control" id="artists" name="artists" placeholder="e.g., Artist1, Artist2" required>
+      <div class="invalid-feedback" id="error-artists">Please provide at least one artist.</div>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="mb-3">
+      <button type="submit" class="btn view-events-btn">Submit</button>
+      <button type="reset" class="btn clear-btn ms-2">Clear</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ url_for('static', filename='js/add.js') }}"></script>
+{% endblock %}
