@@ -1,8 +1,8 @@
-# EDM NYC Webapp
+# HousePulse@NYC
 
 ## Overview
 
-**EDM NYC Webapp** is a dynamic web application designed to showcase electronic dance music events and artists in New York City. The app offers functionalities to view, add, edit, and search for events and artist information, all within a user-friendly interface.
+**HousePulse@NYC** is a dynamic web application designed to showcase electronic dance music events and artists in New York City. The app offers functionalities to view, add, edit, and search for events and artist information, all within a user-friendly interface.
 
 ## Features
 
