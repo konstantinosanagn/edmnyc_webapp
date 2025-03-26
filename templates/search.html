@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+  <div class="search-results">
+    {% if search_text|lower == "all" %}
+      <h1>Showing All Events</h1>
+    {% else %}
+      <h1>Showing Results for "{{ search_text }}"</h1>
+    {% endif %}
+    
+    <div class="spacer"></div>
+    
+    {% if count > 0 %}
+      <p>Found {{ count }} result{{ count == 1 and '' or 's' }}.</p>
+      <div class="container">
+        {% for event in results %}
+          <div class="card search-card mb-3">
+            <div class="row g-0 align-items-center">
+              <!-- Image Column (small) -->
+              <div class="col-auto">
+                <img 
+                  src="{{ event.media }}" 
+                  class="img-fluid" 
+                  style="width: 100px;" 
+                  alt="{{ event.title or 'Event image' }}"
+                  loading="lazy"
+                >
+              </div>
+              <!-- Info Column (fills remaining space) -->
+              <div class="col">
+                <div class="card-body py-2">
+                  <h2 class="card-title mb-1">
+                    <a href="{{ url_for('view_item', id=event.id) }}" aria-label="View details for {{ event.title }}">
+                      {{ event.title | highlight(search_text) | safe }}
+                    </a>
+                  </h2>
+                  <p class="card-text mb-0">
+                    Venue: {{ event.venue | highlight(search_text) | safe }} | Artists: {{ event.artists | join(', ') | highlight(search_text) | safe }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>        
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No matches found</p>
+    {% endif %}
+  </div>
+{% endblock %}

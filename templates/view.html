@@ -1,0 +1,97 @@
+<!-- Author: Konstantinos Anagnostopoulos -->
+{% extends "layout.html" %}
+
+{% block title %}{{ event.title }} Details{% endblock %}
+
+{% block content %}
+<div class="container mt-4 share-tech-mono">
+  <!-- First Row: Title/Attributes -->
+  <div class="row">
+    <!-- Left Column: Title and Venue -->
+    <div class="col-md-6">
+      <h1 class="display-5 fw-bold">
+        {{ event.title }}
+        <a href="/edit/{{ event.id }}" class="edit-icon-link ms-2" title="Edit" aria-label="Edit {{ event.title }}">
+          <i class="bi bi-pencil-square"></i>
+        </a>
+      </h1>
+      
+      <p class="fs-4 text-muted">
+        <a href="/search?q={{ event.venue | urlencode }}" class="venue-link">{{ event.venue }}</a>
+      </p>
+    </div>
+    <!-- Right Column: Address, Date, and Price (Left Aligned) -->
+    <div class="col-md-6 attribute-text">
+      <p class="mb-1 text-end">
+        {{ event.startDate | datetimeformat('%I:%M %p | %a, %B %d') }} <i class="bi bi-calendar ms-1" aria-hidden="true"></i>
+      </p>      
+      <p class="mb-1 text-end">
+        {{ event.address }} <i class="bi bi-geo-alt ms-1" aria-hidden="true"></i>
+      </p>
+    </div>
+  </div>
+
+  <!-- Second Row: Image & Description -->
+  <div class="row mt-3">
+    <!-- Left Column: Event Image -->
+    <div class="col-md-6 text-center">
+      <img 
+        src="{{ event.media }}" 
+        alt="{{ event.title }}" 
+        class="img-fluid cinematic-poster poster-img"
+        loading="lazy"
+      >
+    </div>
+    <!-- Right Column: Event Description, Separator, and Price Info -->
+    <div class="col-md-6">
+      <p class="lead description-text text-muted">{{ event.description }}</p>
+      <!-- Separator Div -->
+      <div class="separator my-3"></div>
+      <!-- Price Info Div -->
+      <div class="price-info text-end price-text">
+        <strong>From:</strong> {{ event.price }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Lineup Section -->
+  <div class="mt-5">
+    <h3 class="fw-bold text-muted">Lineup</h3>
+    <!-- White Space Row -->
+    <div class="spacer"></div>
+    <div class="d-flex flex-wrap align-items-center" id="lineup-container">
+      {% for artist in event.artists %}
+      <div class="artist-item text-center me-4 mb-3" data-artist-name="{{ artist }}">
+        <a href="/search?q={{ artist | urlencode }}" class="artist-link" aria-label="View events by {{ artist }}">
+          <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center artist-circle">
+            <!-- The background image is set via JS -->
+          </div>
+          <p class="mt-2 mb-0">{{ artist }}</p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Similar Events Section -->
+  <div class="mt-5">
+    <h3 class="fw-bold text-muted">Similar Events</h3>
+    <!-- White Space Row -->
+    <div class="spacer"></div>
+    <div class="row" id="similar-events-list" aria-live="polite">
+      <!-- JavaScript will dynamically insert similar event cards here -->
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <!-- Define global variables for JS -->
+  <script>
+    const CURRENT_EVENT_ID = "{{ event.id }}";
+    const ARTISTS_JSON_URL = "{{ url_for('static', filename='artists.json') }}";
+  </script>
+  <!-- Include the external view.js file -->
+  <script src="{{ url_for('static', filename='js/view.js') }}"></script>
+{% endblock %}
